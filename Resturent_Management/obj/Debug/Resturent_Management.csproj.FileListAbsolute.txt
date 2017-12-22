@@ -1,0 +1,10 @@
+D:\LICTproject\Resturent_Management\Resturent_Management\bin\Debug\Resturent_Management.exe.config
+D:\LICTproject\Resturent_Management\Resturent_Management\bin\Debug\Resturent_Management.exe
+D:\LICTproject\Resturent_Management\Resturent_Management\bin\Debug\Resturent_Management.pdb
+D:\LICTproject\Resturent_Management\Resturent_Management\obj\Debug\Resturent_Management.csprojResolveAssemblyReference.cache
+D:\LICTproject\Resturent_Management\Resturent_Management\obj\Debug\Resturent_Management.Form1.resources
+D:\LICTproject\Resturent_Management\Resturent_Management\obj\Debug\Resturent_Management.Properties.Resources.resources
+D:\LICTproject\Resturent_Management\Resturent_Management\obj\Debug\Resturent_Management.csproj.GenerateResource.Cache
+D:\LICTproject\Resturent_Management\Resturent_Management\obj\Debug\Resturent_Management.csproj.CoreCompileInputs.cache
+D:\LICTproject\Resturent_Management\Resturent_Management\obj\Debug\Resturent_Management.exe
+D:\LICTproject\Resturent_Management\Resturent_Management\obj\Debug\Resturent_Management.pdb
