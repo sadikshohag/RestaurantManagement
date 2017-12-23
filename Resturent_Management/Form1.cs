@@ -329,9 +329,11 @@ namespace Resturent_Management
             rtReceipt.AppendText("Fried Prawn Ball \t\t" + txtPrawn.Text + Environment.NewLine);
             rtReceipt.AppendText("Chicken Cutlet \t\t" + txtCutlet.Text + Environment.NewLine);
             rtReceipt.AppendText("---------------------------------------------------------------" + Environment.NewLine);
-            rtReceipt.AppendText("Tax \t\t\t" + lblTax.Text + Environment.NewLine);
-            rtReceipt.AppendText("Sub Total \t\t" + lblSub.Text + Environment.NewLine);
-            rtReceipt.AppendText("Total \t\t\t" + lblTotal.Text + Environment.NewLine);
+            rtReceipt.AppendText("Service Charge \t\t" + lblCharge.Text + Environment.NewLine);
+            rtReceipt.AppendText("---------------------------------------------------------------" + Environment.NewLine);
+            rtReceipt.AppendText("Tax \t\t\t" + lblTaxx.Text + Environment.NewLine);
+            rtReceipt.AppendText("Sub Total \t\t" + lblSubTotal.Text + Environment.NewLine);
+            rtReceipt.AppendText("Total \t\t\t" + lblTotalx.Text + Environment.NewLine);
             rtReceipt.AppendText("---------------------------------------------------------------" + Environment.NewLine);
             rtReceipt.AppendText(lblTime.Text + "\t\t"+ Environment.NewLine+lblDate.Text);
             rtReceipt.AppendText(Environment.NewLine);
@@ -340,7 +342,7 @@ namespace Resturent_Management
         private void button1_Click(object sender, EventArgs e)
         {
             //double rice, am_Cof, af_cof, cap, won, chow, prawn, cutlet;
-            double rice=1.20, am_Cof=1.30, af_cof=1.50, cap=1.75, won=1.77, chow=1.10, prawn=1.15, cutlet=1.75;
+            double rice=1.20, am_Cof=1.30, af_cof=1.50, cap=1.75, won=1.77, chow=1.10, prawn=1.15, cutlet=1.75,tax=0.45;
             double rice_f = Convert.ToDouble(txtRice.Text);
             double am_cof_d = Convert.ToDouble(txtEgg.Text);
             double af_d = Convert.ToDouble(txtDal.Text);
@@ -351,6 +353,27 @@ namespace Resturent_Management
             double cut_f = Convert.ToDouble(txtCutlet.Text);
 
             Res ob = new Res(rice, am_Cof, af_cof, cap, won, chow, prawn, cutlet);
+
+            double cost_of_drinks = (am_Cof * am_cof_d) + (af_cof * af_d) + (cap * cap_d);
+            lblCostOfDrink.Text = Convert.ToString(cost_of_drinks);
+
+            double cost_of_food = (rice_f * rice) + (won * won_f) + (chow_f * chow) + (prawn * prawn_f) + (cutlet * cut_f);
+            lblCostOfFood.Text = Convert.ToString(cost_of_food);
+
+            double service_Charge = Convert.ToDouble(lblCharge.Text);
+
+            lblSubTotal.Text = Convert.ToString(cost_of_food+cost_of_drinks+service_Charge);
+            lblTaxx.Text = Convert.ToString(((cost_of_food + cost_of_drinks + service_Charge)*tax)/100);
+            double iTax = Convert.ToDouble(lblTaxx.Text);
+            lblTotalx.Text = Convert.ToString(cost_of_drinks + cost_of_food + service_Charge+ iTax);
+
+            lblCostOfDrink.Text = String.Format("{0:C}",cost_of_drinks);
+            lblCostOfFood.Text = String.Format("{0:C}", cost_of_food);
+            lblCharge.Text = String.Format("{0:C}", service_Charge);
+            lblSubTotal.Text= String.Format("{0:C}", (cost_of_food + cost_of_drinks + service_Charge));
+            lblTaxx.Text= String.Format("{0:C}", iTax);
+            lblTotalx.Text = String.Format("{0:C}",(cost_of_drinks + cost_of_food + service_Charge + iTax));
+
 
         }
     }

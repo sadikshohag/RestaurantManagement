@@ -95,9 +95,9 @@
             this.btnReceipt = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblTaxx = new System.Windows.Forms.Label();
+            this.lblSubTotal = new System.Windows.Forms.Label();
+            this.lblTotalx = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblSub = new System.Windows.Forms.Label();
             this.lblTax = new System.Windows.Forms.Label();
@@ -865,46 +865,46 @@
             this.lblTotal.TabIndex = 5;
             this.lblTotal.Text = "Total";
             // 
-            // label14
+            // lblTaxx
             // 
-            this.label14.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(259, 24);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(161, 30);
-            this.label14.TabIndex = 6;
-            this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblTaxx.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.lblTaxx.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblTaxx.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTaxx.Location = new System.Drawing.Point(259, 24);
+            this.lblTaxx.Name = "lblTaxx";
+            this.lblTaxx.Size = new System.Drawing.Size(161, 30);
+            this.lblTaxx.TabIndex = 6;
+            this.lblTaxx.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label13
+            // lblSubTotal
             // 
-            this.label13.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(259, 85);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(161, 30);
-            this.label13.TabIndex = 7;
-            this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblSubTotal.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.lblSubTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblSubTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubTotal.Location = new System.Drawing.Point(259, 85);
+            this.lblSubTotal.Name = "lblSubTotal";
+            this.lblSubTotal.Size = new System.Drawing.Size(161, 30);
+            this.lblSubTotal.TabIndex = 7;
+            this.lblSubTotal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label12
+            // lblTotalx
             // 
-            this.label12.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(259, 148);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(161, 30);
-            this.label12.TabIndex = 8;
-            this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblTotalx.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.lblTotalx.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblTotalx.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalx.Location = new System.Drawing.Point(259, 148);
+            this.lblTotalx.Name = "lblTotalx";
+            this.lblTotalx.Size = new System.Drawing.Size(161, 30);
+            this.lblTotalx.TabIndex = 8;
+            this.lblTotalx.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel6.Controls.Add(this.lblSub);
-            this.panel6.Controls.Add(this.label12);
-            this.panel6.Controls.Add(this.label13);
-            this.panel6.Controls.Add(this.label14);
+            this.panel6.Controls.Add(this.lblTotalx);
+            this.panel6.Controls.Add(this.lblSubTotal);
+            this.panel6.Controls.Add(this.lblTaxx);
             this.panel6.Controls.Add(this.lblTotal);
             this.panel6.Controls.Add(this.lblTax);
             this.panel6.Location = new System.Drawing.Point(446, 460);
@@ -1040,9 +1040,9 @@
         private System.Windows.Forms.Button btnReceipt;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblTaxx;
+        private System.Windows.Forms.Label lblSubTotal;
+        private System.Windows.Forms.Label lblTotalx;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label lblSub;
         private System.Windows.Forms.Label lblTax;
